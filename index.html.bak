@@ -402,12 +402,23 @@
 		}
 		</script>
 		
-		<div onclick="copiarEndereco()" class="card">
+		<div onclick="window.open('https://dev.azure.com/arthurquintanilha/BDK/_sprints/taskboard/BDK%20Team/BDK/Sprint%201')" class="card">
             <img src="https://cdn-icons-png.flaticon.com/512/11245/11245901.png" alt="Imagem 3">
             <h2>Boards</h2>
             <button >Abrir</button>
         </div>
 		
+		<div onclick="window.open('https://www.instagram.com/brasildropkeys/')" class="card">
+            <img src="https://i2.wp.com/estudiojardimguedala.com.br/wp-content/uploads/2019/07/Instagram-circle-icon-1.png?ssl=1" alt="Imagem 3">
+            <h2>Perfil Instagram</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://github.com/arthurqui/BDK-Store-2/edit/main/apps/ecommerce/catalog/sorteiobdk.html')" class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/5736/5736412.png" alt="Imagem 3">
+            <h2>Editar Pg Sorteios</h2>
+            <button >Abrir</button>
+        </div>
 
 		
     </div>
