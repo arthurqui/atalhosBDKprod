@@ -128,173 +128,241 @@
 <body>
 
     <button id="dark-mode-toggle" class="toggle-button">🌞</button>
+	
+	
 
-    <h3 class="category-label">Deploys</h3>
-    <div class="category" id="category2">
-        <div onclick="window.open('http://ser.cdt.com.br/', '_blank')" class="card">
-            <img src="https://www.cloudia.com.br/wp-content/uploads/serodonto.png" alt="Imagem 3">
-            <h2>Viewer Serodonto</h2>
-            <button >Abrir</button>
-        </div>
+     
 
-        <div onclick="window.open('http://serapi.cdt.com.br/swagger/index.html', '_blank')" class="card">
-            <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
-            <h2>Swagger Serodonto</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://frontend-b2l-homolog.azurewebsites.net/', '_blank')" class="card">
-            <img src="https://base2launch.com.br/wp-content/uploads/2022/01/cropped-cropped-icon02.png" alt="Imagem 3">
-            <h2>Base2Launch</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('http://backend-b2l-homolog.azurewebsites.net/swagger/index.html', '_blank')" class="card">
-            <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
-            <h2>Swagger B2L</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('http://arthur.cdt.com.br', '_blank')" class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/8024/8024338.png" alt="Imagem 3">
-            <h2>Cadastros Academy</h2>
-            <button >Abrir</button>
-        </div>
-		
-		
-    </div>
 
-    
 
-    <h3 class="category-label">Azure DevOps</h3>
-    <p class="teste">Tarefas da Sprint atual</p>
-    <div class="category" id="category2">
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerFront/_sprints/taskboard/SerFront%20Team/SerFront/', '_blank')" class="card">
-            <img src="https://images-ext-2.discordapp.net/external/s44-LogVFF7hNlRuhN8p6UDRhXCUJuv2BSG6oOKxEz8/%3FoverrideDisplayName%3DSerFront%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/5fd77b9f-30ca-4259-91e3-03d401f3fee9" alt="Imagem 3">
-            <h2>SerFront</h2>
-            <button >Abrir</button>
-        </div>
-
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerBack/_sprints/taskboard/SerBack%20Team/SerBack/', '_blank')" class="card">
-            <img src="https://images-ext-1.discordapp.net/external/sTui5s3PgWGRsOrsAHbF2cpWobyQDVydYtwP9nTKZOo/%3FoverrideDisplayName%3DSerBack%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/e4104777-6527-4442-b2f7-7ad40fc56164" alt="Imagem 3">
-            <h2>SerBack</h2>
-            <button >Abrir</button>
-        </div>
-
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/B2L%20-%20Front-End/_boards/board/t/B2L%20-%20Front-End%20Team/Issues', '_blank')" class="card">
-            <img src="https://images-ext-2.discordapp.net/external/7MBo49LtLtadKu8Vx86-ytEX28KzlVXVIDcPyQvNenM/%3FoverrideDisplayName%3DB2L%2520-%2520Front-End%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/c9ce3bb2-b1b1-41d9-bedb-34c03204577d" alt="Imagem 3">
-            <h2>B2L Front</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://dev.azure.com/cdtsoftware/B2L%20-%20Back-End/_boards/board/t/B2L%20-%20Back-End%20Team/Issues', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146579494904274985/0d7bc364-6611-45b7-8fb8-178854fb57ba.png" alt="Imagem 3">
-            <h2>B2L Back</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://dev.azure.com/cdtsoftware/CRM/_sprints/taskboard/CRM%20Team/CRM/Sprint%201', '_blank')" class="card">
-            <img src="https://dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/5540db7d-874d-4613-b3ef-f43537878aa7?overrideDisplayName=CRM&size=2" alt="Imagem 3">
-            <h2>CRM</h2>
-            <button >Abrir</button>
-        </div>
-		
-		
-    </div>
-
-    <p class="teste">Pull Requests</p>
-    <div class="category" id="category2">
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerFront/_git/SerFront/pullrequests?_a=active', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
-            <h2>SerFront</h2>
-            <button >Abrir</button>
-        </div>
-
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/SerBack/pullrequests?_a=active', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
-            <h2>SerBack</h2>
-            <button >Abrir</button>
-        </div>
-
-        <div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/B2L%20-%20Front-End/pullrequests?_a=active', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
-            <h2>B2L Front</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/B2L%20-%20Back-End/pullrequests?_a=active', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
-            <h2>B2L Back</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/CRM/pullrequests?_a=mine', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
-            <h2>CRM</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<!--
-		<div onclick="window.open('', '_blank')" class="card">
-            <img src="" alt="Imagem 3">
-            <h2>B2L Front</h2>
-            <button >Abrir</button>
-        </div>
-		-->
-    </div>
-
-    <h3 class="category-label">Figma</h3>
+    <h3 class="category-label">Youtube</h3>
     <div class="category" id="category1">
-        <div onclick="window.open('https://www.figma.com/file/iOyn4YSXo7hfv8PjPQAgwq/Design-System---CDT?type=design&node-id=469-6252&mode=design&t=JiCqdUcHK9Vif4jZ-0', '_blank')" class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZLzjdV5nmUu7vvhxOaCnxpu0DzJb38Zv2gZbIJFrZxB5C-uYzgNtFcAi4nfmy5ks_AI&usqp=CAU" alt="Imagem 1">
-            <h2>Design System</h2>
+        <div onclick="window.open('https://www.youtube.com', '_blank')" class="card">
+            <img src="https://www.schoenstattlondrina.com.br/wp-content/uploads/2017/03/best-quality-youtube-logo-download-png-format.png" alt="Imagem 1">
+            <h2>YT normal</h2>
             <button >Abrir</button>
         </div>
 
-        <div onclick="window.open('https://www.figma.com/file/orIU9SskHxgduofd7TvyDx/PWA---Serodonto?node-id=0%3A1&mode=dev', '_blank')" class="card">
-            <img src="https://www.cloudia.com.br/wp-content/uploads/serodonto.png" alt="Imagem 1">
-            <h2>Viewer Serodonto</h2>
+        <div onclick="window.open('https://www.youtube.com/channel/UC9G-9zb78govA7OYtnhF0_w?view_as=subscriber', '_blank')" class="card">
+            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbnq2-LlWcckDEPu_5BB8yzDgrkCcyFWYWxavXMHQ=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 1">
+            <h2>Canal BDK</h2>
             <button >Abrir</button>
         </div>
 
-        <div onclick="window.open('https://www.figma.com/file/gc3WsoH6UXV3BpuVndeGiM/Sistema---B2L?node-id=12%3A57&mode=dev', '_blank')" class="card">
-            <img src="https://base2launch.com.br/wp-content/uploads/2022/01/cropped-cropped-icon02.png" alt="Imagem 2">
-            <h2>B2L</h2>
-            <button >Abrir</button>
-        </div>
-
-        <div onclick="window.open('https://www.figma.com/file/nUNloxBfZQVlDIxvMuhrxh/ServerOdonto?node-id=0%3A1&mode=dev', '_blank')" class="card">
-            <img src="https://play-lh.googleusercontent.com/wsLynybk5QDgosyAJOwJBC2K1tD_61Gm6rxYqzOPojdKiYR9HTtU5GQKlAVaVo0034s" alt="Imagem 3">
-            <h2>ServerOdonto</h2>
+        <div onclick="window.open('https://studio.youtube.com/channel/UC9G-9zb78govA7OYtnhF0_w', '_blank')" class="card">
+            <img src="data:image/png;base64,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" alt="Imagem 2">
+            <h2>YT Studio</h2>
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('https://www.figma.com/file/TWY83CEa4cl9k9DSxpqWGQ/CRM---Serodonto?type=design&node-id=0-1&mode=design&t=wuhNkdZOXOeo1dVK-0', '_blank')" class="card">
-            <img src="https://joaoflopes-dev-ed.file.force.com/servlet/servlet.ImageServer?id=0154w000024UeHF&oid=00DA0000000ZZ89&lastMod=1686171963000" alt="Imagem 3">
-            <h2>CRM</h2>
+		<div onclick="window.open('https://www.youtube.com/@BrasilDropKeys/community', '_blank')" class="card">
+            <img src="https://icon-library.com/images/customers-icon/customers-icon-7.jpg" alt="Imagem 2">
+            <h2>YT Comunidade</h2>
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('https://www.figma.com/file/VB8RuAuUkxSoCsr0dnM9qV/FLUXO---Serodonto?type=design&node-id=0-1&mode=design&t=2GakyecoOZzkJat2-0', '_blank')" class="card">
-            <img src="https://media.discordapp.net/attachments/1157028009031774400/1172234491423633428/image-removebg-preview.png?ex=655f9371&is=654d1e71&hm=b439d6de0429413ffef3712af50fa0532f1023f2d7f472df18e6b6f4a089b413&=&width=625&height=625" alt="Imagem 3">
-            <h2>Fluxo Serodonto</h2>
+		<div onclick="window.open('https://discord.com/channels/404321219652091904/404322104172085273', '_blank')" class="card">
+            <img src="https://img.itch.zone/aW1nLzIyOTc1NTEucG5n/original/M1tS4A.png" alt="Imagem 2">
+            <h2>Salvar imagens</h2>
             <button >Abrir</button>
         </div>
 		
+		<div onclick="abrirPaginaNova()" class="card">
+			<img src="https://icones.pro/wp-content/uploads/2022/05/icone-steam-rouge.png" alt="Imagem 2">
+			<h2>Editar post Steam</h2>
+			<button >Abrir</button>
+		</div>
 
-        <div onclick="window.open('https://www.figma.com/file/Oswst8Q0GzU6606TbBQEwm/APP---Serodonto?node-id=246%3A13928&mode=dev', '_blank')" class="card">
-            <img src="https://yt3.googleusercontent.com/ytc/AGIKgqN4WAloWO3DyhdOBYyK-SSKsThHXqatMxaX7x06=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 3">
-            <h2>APP Serodonto</h2>
+		<script>
+			function abrirPaginaNova() {
+				window.location.href = 'editarpoststeam.html';
+			}
+		</script>
+
+        <div onclick="abrirPaginaNova2()" class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/10744/10744289.png" alt="Imagem 2">
+            <h2>Editar Descrição</h2>
             <button >Abrir</button>
         </div>
+
+        <script>
+            function abrirPaginaNova2() {
+                window.location.href = 'descricao.html';
+            }
+        </script>
 		
     </div>
 	
+    <h3 class="category-label">Youtube</h3>
+    <div class="category" id="category1">
+        <div onclick="window.open('https://docs.google.com/spreadsheets/d/1nFynmbkkXD_35bq2YCuVDln1V4QUEMzuf-ZZvUWo16k/edit?pli=1#gid=0', '_blank')" class="card">
+            <img src="https://www.perkins.org/wp-content/uploads/2015/06/bar_graph2.png" alt="Imagem 1">
+            <h2>Organização</h2>
+            <button >Abrir</button>
+        </div>
 
+        <div onclick="window.open('https://store.steampowered.com/curator/27270161-Brasil-Drop-Keys/admin/pending', '_blank')" class="card">
+            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbnq2-LlWcckDEPu_5BB8yzDgrkCcyFWYWxavXMHQ=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 1">
+            <h2>Curador BDK</h2>
+            <button >Abrir</button>
+        </div>
 
-	
-	
+        <div onclick="window.open('https://drive.google.com/drive/folders/10LGsLTDqzJXGxUD4YoAPIJaIiYY2IYEf?usp=sharing', '_blank')" class="card">
+            <img src="https://play-lh.googleusercontent.com/JRiZbRYO8hOnYVL1ozSxfKL7o6AVpx3HEGpymIRcKoT5gES4-Zbxl_ije-eMTeIczWE" alt="Imagem 2">
+            <h2>Sorteios</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://store.steampowered.com/curator/36596490/', '_blank')" class="card">
+            <img src="https://avatars.cloudflare.steamstatic.com/57a4668845578b7aa617ea4f8df49347ec7ae0d9_full.jpg" alt="Imagem 2">
+            <h2>Curador 2</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dashboard.honeygain.com', '_blank')" class="card">
+            <img src="https://i.pinimg.com/originals/76/ca/8e/76ca8ea85b973ad8168da76b5ab4ceb3.png" alt="Imagem 2">
+            <h2>Honeygain</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://skincashier.com/panel/br/perfil/afiliados', '_blank')" class="card">
+			<img src="https://skinlords.com/wp-content/uploads/2023/09/skincashier-com-site-logo.png" alt="Imagem 2">
+			<h2>Skincashier</h2>
+			<button >Abrir</button>
+		</div>
 
+        <div onclick="window.open('https://encurtandourl.com/member/dashboard', '_blank')" class="card">
+			<img src="https://media.discordapp.net/attachments/404322104172085273/1181047361011716217/image.png?ex=657fa311&is=656d2e11&hm=58b7cb8b5fff08e6b55967951d51b89e96d4b4aedd38518afe1539ea4426df0d&=&format=webp&quality=lossless" alt="Imagem 2">
+			<h2>EncurtandoUrl</h2>
+			<button >Abrir</button>
+		</div>
+
+		
+		
+    </div>
+
+	<h3 class="category-label">Vídeo</h3>
+    <div class="category" id="category2">
+        <div onclick="copiarEndereco3()" class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/VEGAS_Pro_icon.png" alt="Imagem 3">
+            <h2>Vídeo youtube</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<script>
+		function copiarEndereco3() {
+			// Endereço a ser copiado
+			var endereco = 'C:\\Users\\Arthur\\Desktop\\ultimo video.veg';
+
+			// Criar um elemento de input temporário
+			var inputTemporario = document.createElement('input');
+			inputTemporario.setAttribute('value', endereco);
+			document.body.appendChild(inputTemporario);
+
+			// Selecionar o conteúdo do input temporário
+			inputTemporario.select();
+			inputTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+			// Executar o comando de cópia
+			document.execCommand('copy');
+
+			// Remover o input temporário
+			document.body.removeChild(inputTemporario);
+
+			// Avisar o usuário que o endereço foi copiado
+			alert('Aperte Windows + R, ctrl + V e depois ENTER \n Endereço do projeto: ' + endereco);
+		}
+		</script>
+		
+		<div onclick="window.open('steam://run/769670')" class="card">
+            <img src="https://img.movavi.com/online-help/gamecapture/1/images/drex_index_custom.png" alt="Imagem 3">
+            <h2>Gravador</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="copiarEndereco()" class="card">
+            <img src="https://icon-library.com/images/adobe-photoshop-icon-png/adobe-photoshop-icon-png-15.jpg" alt="Imagem 3">
+            <h2>Projeto Thumb YT</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<script>
+		function copiarEndereco() {
+			// Endereço a ser copiado
+			var endereco = 'C:\\Users\\Arthur\\Desktop\\projeto thumb promocao.psd';
+
+			// Criar um elemento de input temporário
+			var inputTemporario = document.createElement('input');
+			inputTemporario.setAttribute('value', endereco);
+			document.body.appendChild(inputTemporario);
+
+			// Selecionar o conteúdo do input temporário
+			inputTemporario.select();
+			inputTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+			// Executar o comando de cópia
+			document.execCommand('copy');
+
+			// Remover o input temporário
+			document.body.removeChild(inputTemporario);
+
+			// Avisar o usuário que o endereço foi copiado
+			alert('Aperte Windows + R, ctrl + V e depois ENTER \n Endereço do projeto: ' + endereco);
+		}
+		</script>
+		
+		<div onclick="copiarEndereco2()" class="card">
+            <img src="https://icon-library.com/images/adobe-photoshop-icon-png/adobe-photoshop-icon-png-15.jpg" alt="Imagem 3">
+            <h2>Arte promoção</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<script>
+		function copiarEndereco2() {
+			// Endereço a ser copiado
+			var endereco = 'C:\\Users\\Arthur\\Desktop\\promoção.psd';
+
+			// Criar um elemento de input temporário
+			var inputTemporario = document.createElement('input');
+			inputTemporario.setAttribute('value', endereco);
+			document.body.appendChild(inputTemporario);
+
+			// Selecionar o conteúdo do input temporário
+			inputTemporario.select();
+			inputTemporario.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+			// Executar o comando de cópia
+			document.execCommand('copy');
+
+			// Remover o input temporário
+			document.body.removeChild(inputTemporario);
+
+			// Avisar o usuário que o endereço foi copiado
+			alert('Aperte Windows + R, ctrl + V e depois ENTER \n Endereço do projeto: ' + endereco);
+		}
+		</script>
+		
+		<div onclick="window.open('http://old.reddit.com/r/FreeGameFindings/', '_blank')" class="card">
+            <img src="https://b.thumbs.redditmedia.com/EMVWsPI-uF9pONZplGKVaM1lDzVO7K_VTj5pINO-tXw.png" alt="Imagem 1">
+            <h2>FreeGamesFinding</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://www.reddit.com/r/Steam/', '_blank')" class="card">
+            <img src="https://icones.pro/wp-content/uploads/2022/05/icone-steam-orange.png" alt="Imagem 1">
+            <h2>Steam Reddit</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://www.reddit.com/r/EpicGamesPC/', '_blank')" class="card">
+            <img src="https://global-uploads.webflow.com/5d44771a95c1f5121689f944/62ddfc18029d02f11d560d80_Unreal-Engine-Logo.png" alt="Imagem 1">
+            <h2>Epic Reddit</h2>
+            <button >Abrir</button>
+        </div>
+
+        	
+		
+    </div>
     <!-- Adicione mais categorias ou cards conforme necessário -->
 
     <script>
@@ -326,9 +394,19 @@
     });
 </script>
 
+<script>
+    // Função para alternar a visibilidade do bloco de comandos
+    function toggleCommands() {
+        console.log('Botão pressionado');
+        var commandsBlock = document.getElementById('commands-block');
+        commandsBlock.style.display = (commandsBlock.style.display === 'none' || commandsBlock.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+
 
 </div>
-<button onclick="toggleCommands()">Comandos</button>
+<button onclick="toggleCommands()">Anotações</button>
 <div id="commands-block" style="display: none;">
     <p>
         comandos git:

@@ -183,7 +183,7 @@ Links sem encurtador:
     </div>
 
     
-     
+     <button onclick="copyToClipboard()">Copiar para a área de transferência</button> 
 
 
 
@@ -236,6 +236,17 @@ Links sem encurtador:
         console.log('Botão pressionado');
         var commandsBlock = document.getElementById('commands-block');
         commandsBlock.style.display = (commandsBlock.style.display === 'none' || commandsBlock.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+<script>
+  
+    // Função para copiar o conteúdo da textarea para a área de transferência
+    function copyToClipboard() {
+        var editor = document.getElementById('editor');
+        editor.select();
+        document.execCommand('copy');
+        alert('Texto copiado para a área de transferência!');
     }
 </script>
 
