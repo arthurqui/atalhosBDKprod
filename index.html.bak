@@ -130,12 +130,6 @@
     <button id="dark-mode-toggle" class="toggle-button">🌞</button>
 	
 	
-
-     
-
-
-
-    <h3 class="category-label">Youtube</h3>
     <div class="category" id="category1">
         <div onclick="window.open('https://www.youtube.com', '_blank')" class="card">
             <img src="https://www.schoenstattlondrina.com.br/wp-content/uploads/2017/03/best-quality-youtube-logo-download-png-format.png" alt="Imagem 1">
@@ -191,9 +185,15 @@
             }
         </script>
 		
+		<div onclick="window.open('http://old.reddit.com/r/FreeGameFindings/', '_blank')" class="card">
+            <img src="https://b.thumbs.redditmedia.com/EMVWsPI-uF9pONZplGKVaM1lDzVO7K_VTj5pINO-tXw.png" alt="Imagem 1">
+            <h2>FreeGamesFinding</h2>
+            <button >Abrir</button>
+        </div>
+		
     </div>
 	
-    <h3 class="category-label">Youtube</h3>
+
     <div class="category" id="category1">
         <div onclick="window.open('https://docs.google.com/spreadsheets/d/1nFynmbkkXD_35bq2YCuVDln1V4QUEMzuf-ZZvUWo16k/edit?pli=1#gid=0', '_blank')" class="card">
             <img src="https://www.perkins.org/wp-content/uploads/2015/06/bar_graph2.png" alt="Imagem 1">
@@ -237,11 +237,71 @@
 			<button >Abrir</button>
 		</div>
 
+		<div onclick="window.open('https://www.reddit.com/r/Steam/', '_blank')" class="card">
+            <img src="https://icones.pro/wp-content/uploads/2022/05/icone-steam-orange.png" alt="Imagem 1">
+            <h2>Steam Reddit</h2>
+            <button >Abrir</button>
+        </div>
+		
+		
+    </div>
+	
+    <div class="category" id="category1">
+        <div onclick="window.open('https://www.keyjoker.com', '_blank')" class="card">
+            <img src="https://s3.idle-empire.com/public/shop/platforms/keyjoker.png" alt="Imagem 1">
+            <h2>Keyjoker</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://www.paypal.com/myaccount/summary', '_blank')" class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/PayPal_Logo_Icon_2014.svg/1664px-PayPal_Logo_Icon_2014.svg.png" alt="Imagem 1">
+            <h2>PayPal</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://lojabdk.netlify.app', '_blank')" class="card">
+            <img src="https://yt3.googleusercontent.com/ytc/APkrFKbnq2-LlWcckDEPu_5BB8yzDgrkCcyFWYWxavXMHQ=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 2">
+            <h2>Loja BDK</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://drive.google.com/drive/u/0/folders/1l-q0nV93kGQ_JCfPua3E6LUQMN7_OhXG', '_blank')" class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/12/18/13/45/download-1915753_1280.png" alt="Imagem 2">
+            <h2>Download</h2>
+            <button >Abrir</button>
+        </div>
+		
+				
+		<div onclick="window.open('https://chat.openai.com/c/c0ef7d88-d3bb-45fc-9081-fc7184878cf4', '_blank')" class="card">
+			<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/chatgpt-icon.png" alt="Imagem 2">
+			<h2>Prompt Análises</h2>
+			<button >Abrir</button>
+		</div>
+		
+		<div onclick="window.open('https://www.coinbase.com/home', '_blank')" class="card">
+			<img src="https://altcoinsbox.com/wp-content/uploads/2022/12/coinbase-logo.webp" alt="Imagem 2">
+			<h2>Coinbase</h2>
+			<button >Abrir</button>
+		</div>
+		
+		<div onclick="window.open('https://www.idle-empire.com/earn', '_blank')" class="card">
+			<img src="https://www.idle-empire.com/media/empire/logos/logo-empire.png" alt="Imagem 2">
+			<h2>Idle-Empire</h2>
+			<button >Abrir</button>
+		</div>
+		
+		<div onclick="window.open('https://www.reddit.com/r/EpicGamesPC/', '_blank')" class="card">
+            <img src="https://global-uploads.webflow.com/5d44771a95c1f5121689f944/62ddfc18029d02f11d560d80_Unreal-Engine-Logo.png" alt="Imagem 1">
+            <h2>Epic Reddit</h2>
+            <button >Abrir</button>
+        </div>
+
+        
+
 		
 		
     </div>
 
-	<h3 class="category-label">Vídeo</h3>
     <div class="category" id="category2">
         <div onclick="copiarEndereco3()" class="card">
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/VEGAS_Pro_icon.png" alt="Imagem 3">
@@ -313,7 +373,7 @@
 		
 		<div onclick="copiarEndereco2()" class="card">
             <img src="https://icon-library.com/images/adobe-photoshop-icon-png/adobe-photoshop-icon-png-15.jpg" alt="Imagem 3">
-            <h2>Arte promoção</h2>
+            <h2>Arte Promoção</h2>
             <button >Abrir</button>
         </div>
 		
@@ -342,25 +402,13 @@
 		}
 		</script>
 		
-		<div onclick="window.open('http://old.reddit.com/r/FreeGameFindings/', '_blank')" class="card">
-            <img src="https://b.thumbs.redditmedia.com/EMVWsPI-uF9pONZplGKVaM1lDzVO7K_VTj5pINO-tXw.png" alt="Imagem 1">
-            <h2>FreeGamesFinding</h2>
+		<div onclick="copiarEndereco()" class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/11245/11245901.png" alt="Imagem 3">
+            <h2>Boards</h2>
             <button >Abrir</button>
         </div>
 		
-		<div onclick="window.open('https://www.reddit.com/r/Steam/', '_blank')" class="card">
-            <img src="https://icones.pro/wp-content/uploads/2022/05/icone-steam-orange.png" alt="Imagem 1">
-            <h2>Steam Reddit</h2>
-            <button >Abrir</button>
-        </div>
-		
-		<div onclick="window.open('https://www.reddit.com/r/EpicGamesPC/', '_blank')" class="card">
-            <img src="https://global-uploads.webflow.com/5d44771a95c1f5121689f944/62ddfc18029d02f11d560d80_Unreal-Engine-Logo.png" alt="Imagem 1">
-            <h2>Epic Reddit</h2>
-            <button >Abrir</button>
-        </div>
 
-        	
 		
     </div>
     <!-- Adicione mais categorias ou cards conforme necessário -->
