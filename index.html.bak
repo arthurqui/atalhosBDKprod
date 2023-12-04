@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Atalhos</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        background-color: #252525;
+        color:#fff;
+        padding: 20px;
+        text-align: center; /* Centralizar os cards horizontalmente */
+        }
+
+        /* Estilos para o modo escuro */
+        .dark-mode {
+            background-color: #f0f0f0; /* Cor de fundo escura */
+            color: black; /* Cor do texto clara */
+        }
+        
+                .teste {
+            text-align: left;
+            font-weight: bold; /* Define o peso da fonte como negrito */
+        }
+
+        /* Estilos para o botão toggle */
+        .toggle-button {
+            position: absolute;
+            top: 10px; /* Ajuste a posição vertical conforme necessário */
+            right: 10px; /* Ajuste a posição horizontal conforme necessário */
+            padding: 10px 20px;
+            background-color: #00000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Estilos para o botão toggle quando ativado */
+        .toggle-button.active {
+            background-color: #ccc; /* Cor de fundo quando o modo claro está ativado */
+            color: #000; /* Cor do texto quando o modo claro está ativado */
+        }
+
+        .category-label {
+            font-size: 24px; /* Tamanho do rótulo da categoria */
+            margin-bottom: 10px; /* Espaçamento entre o rótulo e a categoria */
+            text-align: Left; /* Alinhar o rótulo à esquerda */
+        }
+
+        .category {
+            margin-bottom: 20px; /* Espaçamento entre categorias */
+            white-space: nowrap; /* Impedir que os cards quebrem para a próxima linha */
+            overflow-x: auto; /* Adicionar uma barra de rolagem horizontal quando necessário */
+            display: flex; /* Usar flexbox para o layout horizontal */
+        }
+
+        .category .card {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centralizar o conteúdo dentro do card */
+            color: #121212;
+        }
+
+        .category .card h2 {
+            font-size: 16px;
+        }
+
+        .category .card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .category .card img {
+            width: 100px; /* Largura fixa */
+            height: 100px; /* Altura fixa */
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilo para centralizar a primeira categoria */
+        #category1 {
+            margin: 0 auto; /* Centralizar horizontalmente */
+            text-align: center; /* Centralizar o rótulo horizontalmente */
+        }
+
+        /* Estilos para telas menores (max-width: 768px) */
+        @media (max-width: 768px) {
+            .toggle-button {
+                top: 20px; /* Ajuste a posição vertical para telas menores */
+                right: 20px; /* Ajuste a posição horizontal para telas menores */
+            }
+        
+            .category-label {
+                font-size: 20px; /* Reduza o tamanho do rótulo da categoria para telas menores */
+                text-align: left; /* Alinhe o rótulo à esquerda para telas menores */
+            }
+        
+            .category {
+                flex-direction: column; /* Altere a direção do flexbox para empilhar os cards verticalmente */
+                align-items: center; /* Centralize os cards horizontalmente */
+            }
+        
+            .category .card {
+                width: 100%; /* Defina a largura dos cards para ocupar 100% da largura da tela */
+                margin: 10px 0; /* Adicione espaço superior e inferior aos cards */
+            }
+        
+            .category .card h2 {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="dark-mode-toggle" class="toggle-button">🌞</button>
+
+    <h3 class="category-label">Deploys</h3>
+    <div class="category" id="category2">
+        <div onclick="window.open('http://ser.cdt.com.br/', '_blank')" class="card">
+            <img src="https://www.cloudia.com.br/wp-content/uploads/serodonto.png" alt="Imagem 3">
+            <h2>Viewer Serodonto</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('http://serapi.cdt.com.br/swagger/index.html', '_blank')" class="card">
+            <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
+            <h2>Swagger Serodonto</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://frontend-b2l-homolog.azurewebsites.net/', '_blank')" class="card">
+            <img src="https://base2launch.com.br/wp-content/uploads/2022/01/cropped-cropped-icon02.png" alt="Imagem 3">
+            <h2>Base2Launch</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('http://backend-b2l-homolog.azurewebsites.net/swagger/index.html', '_blank')" class="card">
+            <img src="https://www.alura.com.br/assets/api/cursos/512/swagger-documentando-apis.png" alt="Imagem 3">
+            <h2>Swagger B2L</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('http://arthur.cdt.com.br', '_blank')" class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/8024/8024338.png" alt="Imagem 3">
+            <h2>Cadastros Academy</h2>
+            <button >Abrir</button>
+        </div>
+		
+		
+    </div>
+
+    
+
+    <h3 class="category-label">Azure DevOps</h3>
+    <p class="teste">Tarefas da Sprint atual</p>
+    <div class="category" id="category2">
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerFront/_sprints/taskboard/SerFront%20Team/SerFront/', '_blank')" class="card">
+            <img src="https://images-ext-2.discordapp.net/external/s44-LogVFF7hNlRuhN8p6UDRhXCUJuv2BSG6oOKxEz8/%3FoverrideDisplayName%3DSerFront%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/5fd77b9f-30ca-4259-91e3-03d401f3fee9" alt="Imagem 3">
+            <h2>SerFront</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerBack/_sprints/taskboard/SerBack%20Team/SerBack/', '_blank')" class="card">
+            <img src="https://images-ext-1.discordapp.net/external/sTui5s3PgWGRsOrsAHbF2cpWobyQDVydYtwP9nTKZOo/%3FoverrideDisplayName%3DSerBack%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/e4104777-6527-4442-b2f7-7ad40fc56164" alt="Imagem 3">
+            <h2>SerBack</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/B2L%20-%20Front-End/_boards/board/t/B2L%20-%20Front-End%20Team/Issues', '_blank')" class="card">
+            <img src="https://images-ext-2.discordapp.net/external/7MBo49LtLtadKu8Vx86-ytEX28KzlVXVIDcPyQvNenM/%3FoverrideDisplayName%3DB2L%2520-%2520Front-End%26size%3D2/https/dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/c9ce3bb2-b1b1-41d9-bedb-34c03204577d" alt="Imagem 3">
+            <h2>B2L Front</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/B2L%20-%20Back-End/_boards/board/t/B2L%20-%20Back-End%20Team/Issues', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146579494904274985/0d7bc364-6611-45b7-8fb8-178854fb57ba.png" alt="Imagem 3">
+            <h2>B2L Back</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/CRM/_sprints/taskboard/CRM%20Team/CRM/Sprint%201', '_blank')" class="card">
+            <img src="https://dev.azure.com/cdtsoftware/_apis/GraphProfile/MemberAvatars/5540db7d-874d-4613-b3ef-f43537878aa7?overrideDisplayName=CRM&size=2" alt="Imagem 3">
+            <h2>CRM</h2>
+            <button >Abrir</button>
+        </div>
+		
+		
+    </div>
+
+    <p class="teste">Pull Requests</p>
+    <div class="category" id="category2">
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/SerFront/_git/SerFront/pullrequests?_a=active', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>SerFront</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/SerBack/pullrequests?_a=active', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>SerBack</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/B2L%20-%20Front-End/pullrequests?_a=active', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>B2L Front</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/B2L%20-%20Back-End/pullrequests?_a=active', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>B2L Back</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://dev.azure.com/cdtsoftware/_git/CRM/pullrequests?_a=mine', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/404322104172085273/1146599920778891375/emptyPRList.e7LLYc.png" alt="Imagem 3">
+            <h2>CRM</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<!--
+		<div onclick="window.open('', '_blank')" class="card">
+            <img src="" alt="Imagem 3">
+            <h2>B2L Front</h2>
+            <button >Abrir</button>
+        </div>
+		-->
+    </div>
+
+    <h3 class="category-label">Figma</h3>
+    <div class="category" id="category1">
+        <div onclick="window.open('https://www.figma.com/file/iOyn4YSXo7hfv8PjPQAgwq/Design-System---CDT?type=design&node-id=469-6252&mode=design&t=JiCqdUcHK9Vif4jZ-0', '_blank')" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZLzjdV5nmUu7vvhxOaCnxpu0DzJb38Zv2gZbIJFrZxB5C-uYzgNtFcAi4nfmy5ks_AI&usqp=CAU" alt="Imagem 1">
+            <h2>Design System</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://www.figma.com/file/orIU9SskHxgduofd7TvyDx/PWA---Serodonto?node-id=0%3A1&mode=dev', '_blank')" class="card">
+            <img src="https://www.cloudia.com.br/wp-content/uploads/serodonto.png" alt="Imagem 1">
+            <h2>Viewer Serodonto</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://www.figma.com/file/gc3WsoH6UXV3BpuVndeGiM/Sistema---B2L?node-id=12%3A57&mode=dev', '_blank')" class="card">
+            <img src="https://base2launch.com.br/wp-content/uploads/2022/01/cropped-cropped-icon02.png" alt="Imagem 2">
+            <h2>B2L</h2>
+            <button >Abrir</button>
+        </div>
+
+        <div onclick="window.open('https://www.figma.com/file/nUNloxBfZQVlDIxvMuhrxh/ServerOdonto?node-id=0%3A1&mode=dev', '_blank')" class="card">
+            <img src="https://play-lh.googleusercontent.com/wsLynybk5QDgosyAJOwJBC2K1tD_61Gm6rxYqzOPojdKiYR9HTtU5GQKlAVaVo0034s" alt="Imagem 3">
+            <h2>ServerOdonto</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://www.figma.com/file/TWY83CEa4cl9k9DSxpqWGQ/CRM---Serodonto?type=design&node-id=0-1&mode=design&t=wuhNkdZOXOeo1dVK-0', '_blank')" class="card">
+            <img src="https://joaoflopes-dev-ed.file.force.com/servlet/servlet.ImageServer?id=0154w000024UeHF&oid=00DA0000000ZZ89&lastMod=1686171963000" alt="Imagem 3">
+            <h2>CRM</h2>
+            <button >Abrir</button>
+        </div>
+		
+		<div onclick="window.open('https://www.figma.com/file/VB8RuAuUkxSoCsr0dnM9qV/FLUXO---Serodonto?type=design&node-id=0-1&mode=design&t=2GakyecoOZzkJat2-0', '_blank')" class="card">
+            <img src="https://media.discordapp.net/attachments/1157028009031774400/1172234491423633428/image-removebg-preview.png?ex=655f9371&is=654d1e71&hm=b439d6de0429413ffef3712af50fa0532f1023f2d7f472df18e6b6f4a089b413&=&width=625&height=625" alt="Imagem 3">
+            <h2>Fluxo Serodonto</h2>
+            <button >Abrir</button>
+        </div>
+		
+
+        <div onclick="window.open('https://www.figma.com/file/Oswst8Q0GzU6606TbBQEwm/APP---Serodonto?node-id=246%3A13928&mode=dev', '_blank')" class="card">
+            <img src="https://yt3.googleusercontent.com/ytc/AGIKgqN4WAloWO3DyhdOBYyK-SSKsThHXqatMxaX7x06=s900-c-k-c0x00ffffff-no-rj" alt="Imagem 3">
+            <h2>APP Serodonto</h2>
+            <button >Abrir</button>
+        </div>
+		
+    </div>
+	
+
+
+	
+	
+
+    <!-- Adicione mais categorias ou cards conforme necessário -->
+
+    <script>
+        // Adicionar funcionalidade de carrossel às categorias
+        document.getElementById('category1').addEventListener('mouseover', function () {
+            this.style.overflowX = 'auto';
+        });
+
+        document.getElementById('category1').addEventListener('mouseleave', function () {
+            this.style.overflowX = 'hidden';
+        });
+
+        document.getElementById('category2').addEventListener('mouseover', function () {
+            this.style.overflowX = 'auto';
+        });
+
+        document.getElementById('category2').addEventListener('mouseleave', function () {
+            this.style.overflowX = 'hidden';
+        });
+    </script>
+
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = body.classList.contains('dark-mode') ? '🌙' : '🌞';
+    });
+</script>
+
+
+</div>
+<button onclick="toggleCommands()">Comandos</button>
+<div id="commands-block" style="display: none;">
+    <p>
+        comandos git:
+        <br>
+        Pegar mudanças da developer: git pull origin developer
+        <br><br>
+        Comandos pg:
+        <br>
+        Select * From "Courses"
+        <br>
+        Delete from public."Courses" Where "Id" = 26
+        <br>
+        <br>
+        <br>
+    </p>
+</div>
+	
+	
+
+</body>
+</html>

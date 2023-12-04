@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Atalhos</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        background-color: #252525;
+        color:#fff;
+        padding: 20px;
+        text-align: center; /* Centralizar os cards horizontalmente */
+        }
+
+        /* Estilos para o modo escuro */
+        .dark-mode {
+            background-color: #f0f0f0; /* Cor de fundo escura */
+            color: black; /* Cor do texto clara */
+        }
+        
+                .teste {
+            text-align: left;
+            font-weight: bold; /* Define o peso da fonte como negrito */
+        }
+
+        /* Estilos para o botão toggle */
+        .toggle-button {
+            position: absolute;
+            top: 10px; /* Ajuste a posição vertical conforme necessário */
+            right: 10px; /* Ajuste a posição horizontal conforme necessário */
+            padding: 10px 20px;
+            background-color: #00000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Estilos para o botão toggle quando ativado */
+        .toggle-button.active {
+            background-color: #ccc; /* Cor de fundo quando o modo claro está ativado */
+            color: #000; /* Cor do texto quando o modo claro está ativado */
+        }
+
+        .category-label {
+            font-size: 24px; /* Tamanho do rótulo da categoria */
+            margin-bottom: 10px; /* Espaçamento entre o rótulo e a categoria */
+            text-align: Left; /* Alinhar o rótulo à esquerda */
+        }
+
+        .category {
+            margin-bottom: 20px; /* Espaçamento entre categorias */
+            white-space: nowrap; /* Impedir que os cards quebrem para a próxima linha */
+            overflow-x: auto; /* Adicionar uma barra de rolagem horizontal quando necessário */
+            display: flex; /* Usar flexbox para o layout horizontal */
+        }
+
+        .category .card {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centralizar o conteúdo dentro do card */
+            color: #121212;
+        }
+
+        .category .card h2 {
+            font-size: 16px;
+        }
+
+        .category .card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .category .card img {
+            width: 100px; /* Largura fixa */
+            height: 100px; /* Altura fixa */
+            max-width: 100%;
+            height: auto;
+        }
+
+        #editor {
+            width: 1000px; /* Largura ajustada para 90% da largura da tela */
+            height: 300px;
+            font-size: 16px;
+        }
+
+        #submitBtn {
+            margin-top: 10px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Estilo para centralizar a primeira categoria */
+        #category1 {
+            margin: 0 auto; /* Centralizar horizontalmente */
+            text-align: center; /* Centralizar o rótulo horizontalmente */
+        }
+
+        /* Estilos para telas menores (max-width: 768px) */
+        @media (max-width: 768px) {
+            .toggle-button {
+                top: 20px; /* Ajuste a posição vertical para telas menores */
+                right: 20px; /* Ajuste a posição horizontal para telas menores */
+            }
+        
+            .category-label {
+                font-size: 20px; /* Reduza o tamanho do rótulo da categoria para telas menores */
+                text-align: left; /* Alinhe o rótulo à esquerda para telas menores */
+            }
+        
+            .category {
+                flex-direction: column; /* Altere a direção do flexbox para empilhar os cards verticalmente */
+                align-items: center; /* Centralize os cards horizontalmente */
+            }
+        
+            .category .card {
+                width: 100%; /* Defina a largura dos cards para ocupar 100% da largura da tela */
+                margin: 10px 0; /* Adicione espaço superior e inferior aos cards */
+            }
+        
+            .category .card h2 {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="dark-mode-toggle" class="toggle-button">🌞</button>
+	
+    <br><br><br><br>
+	 
+    <div>
+        <textarea id="editor">https://store.steampowered.com/app/241930/Middleearth_Shadow_of_Mordor/
+
+[url=https://lojabdk.netlify.app/apps/ecommerce/catalog/sorteiobdk]Para participar clique aqui! [/url]</textarea>
+        <br>
+        
+    </div>
+
+    
+     
+
+
+
+
+        
+		
+    </div>
+	
+
+
+
+
+	
+	
+
+    <!-- Adicione mais categorias ou cards conforme necessário -->
+
+    <script>
+        // Adicionar funcionalidade de carrossel às categorias
+        document.getElementById('category1').addEventListener('mouseover', function () {
+            this.style.overflowX = 'auto';
+        });
+
+        document.getElementById('category1').addEventListener('mouseleave', function () {
+            this.style.overflowX = 'hidden';
+        });
+
+        document.getElementById('category2').addEventListener('mouseover', function () {
+            this.style.overflowX = 'auto';
+        });
+
+        document.getElementById('category2').addEventListener('mouseleave', function () {
+            this.style.overflowX = 'hidden';
+        });
+    </script>
+
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = body.classList.contains('dark-mode') ? '🌙' : '🌞';
+    });
+</script>
+
+<script>
+    // Função para alternar a visibilidade do bloco de comandos
+    function toggleCommands() {
+        console.log('Botão pressionado');
+        var commandsBlock = document.getElementById('commands-block');
+        commandsBlock.style.display = (commandsBlock.style.display === 'none' || commandsBlock.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+
+
+</div>
+<button onclick="toggleCommands()">Anotações</button>
+<div id="commands-block" style="display: none;">
+    <p>
+        comandos git:
+        <br>
+        Pegar mudanças da developer: git pull origin developer
+        <br><br>
+        Comandos pg:
+        <br>
+        Select * From "Courses"
+        <br>
+        Delete from public."Courses" Where "Id" = 26
+        <br>
+        <br>
+        <br>
+    </p>
+</div>
+	
+	
+
+</body>
+</html>

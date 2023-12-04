@@ -1,2 +1,2 @@
-# atalhosBDKprod
-atalhos de produtividade BDK Paraiba
+# atalhos
+atalhoscdt
