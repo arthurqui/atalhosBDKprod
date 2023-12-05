@@ -183,7 +183,7 @@ Links sem encurtador:
     </div>
 
     
-     <button onclick="copyToClipboard()">Copiar para a área de transferência</button> <button onclick="copyToClipboard()">Copiar para a área de transferência</button>
+     <button onclick="copyToClipboard()">Copiar para a área de transferência</button> 
 
 
 
