@@ -210,8 +210,9 @@
   <input type="number" id="quantidade" min="1" required>
 
   <button onclick="iniciarContagem()">Sortear</button>
-
+<br><br>
   <div id="countdown"></div>
+  <br>
   <div id="resultado"></div>
 
   <script>
