@@ -95,6 +95,13 @@
             height: 300px;
             font-size: 16px;
         }
+		
+		#editor2 {
+            width: 1000px; /* Largura ajustada para 90% da largura da tela */
+            height: 300px;
+            font-size: 16px;
+        }
+
 
         #submitBtn {
             margin-top: 10px;
@@ -147,13 +154,33 @@
     <div>
         <textarea id="editor">https://store.steampowered.com/app/241930/Middleearth_Shadow_of_Mordor/
 
-[url=https://lojabdk.netlify.app/apps/ecommerce/catalog/sorteiobdk]Para participar clique aqui! [/url]</textarea>
+		[url=https://lojabdk.netlify.app/apps/ecommerce/catalog/sorteiobdk]Para participar clique aqui! [/url]</textarea>
+        <br>
+        
+    </div>
+
+	 
+    
+     <button onclick="copyToClipboard()">Copiar para a área de transferência</button>
+	 <button onclick="window.open('https://steamcommunity.com/groups/brdropkeys/announcements/create', '_blank')">Nova postagem Steam</button>
+	 <br><br><br><br>
+	 <div>
+        <textarea id="editor2">[quote=Paraiba] É isso que está no título mesmo!!
+
+https://www.youtube.com/watch?v=MDTad6k9VPc
+
+
+[url=https://www.youtube.com/watch?v=MDTad6k9VPc]Clique aqui para saber todas as informações! [/url]
+
+[table][tr][th]⠀⠀ːpresent_emoː⠀⠀[/th][th]Para não perder mais jogos, siga o BDK![/th][th]⠀ ⠀ːpresent_emoː⠀ ⠀[/th][/tr][/table]
+[table][tr][th][url=https://www.youtube.com/c/BrasilDropKeys?sub_confirmation=1]Youtube[/url][/th][th][url=http://bdk.eu5.org]Site BDK[/url][/th][th][url=https://www.instagram.com/brasildropkeys/]Instagram[/url][/th][/tr][/table][/quote]</textarea>
         <br>
         
     </div>
 
     
-     <button onclick="copyToClipboard()">Copiar para a área de transferência</button>
+     <button onclick="copyToClipboard2()">Copiar para a área de transferência</button>
+	 <button onclick="window.open('https://steamcommunity.com/groups/brdropkeys/announcements/create', '_blank')">Nova postagem Steam</button>
 
 
 
@@ -215,6 +242,17 @@
     function copyToClipboard() {
         var editor = document.getElementById('editor');
         editor.select();
+        document.execCommand('copy');
+        alert('Texto copiado para a área de transferência!');
+    }
+</script>
+
+<script>
+  
+    // Função para copiar o conteúdo da textarea para a área de transferência
+    function copyToClipboard2() {
+        var editor2 = document.getElementById('editor2');
+        editor2.select();
         document.execCommand('copy');
         alert('Texto copiado para a área de transferência!');
     }
