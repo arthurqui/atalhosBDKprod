@@ -197,8 +197,8 @@
     
             let finalLink = `https://lojabdk.netlify.app/redirect.html?id=${id}&link=${encodeURIComponent(link)}&titulo=${encodeURIComponent(titulo)}`;
     
-            // Adiciona o parâmetro img, se vazio será "" na query string
-            finalLink += `&img="${encodeURIComponent(img || "")}"`;
+            // Adiciona o parâmetro img, dependendo de seu valor
+            finalLink += img ? `&img=${encodeURIComponent(img)}` : `&img=""`;
     
             // URL da API do Bitly
             const apiUrl = 'https://api-ssl.bitly.com/v4/shorten';
@@ -257,6 +257,7 @@
             });
         }
     </script>
+    
     
     
     
