@@ -190,15 +190,19 @@
             const img = document.getElementById('img').value;
             const link = document.getElementById('link').value;
     
-            if (id === "0" || !titulo || !link) {
-                alert("Por favor, preencha todos os campos obrigatórios corretamente.");
+            if (id === "0" || !link) {
+                alert("Por favor, selecione uma opção válida e insira um link obrigatório.");
                 return;
             }
     
-            let finalLink = `https://lojabdk.netlify.app/redirect.html?id=${id}&link=${encodeURIComponent(link)}&titulo=${encodeURIComponent(titulo)}`;
+            // Ajusta o título caso esteja vazio
+            const finalTitulo = titulo ? encodeURIComponent(titulo) : "Clique aqui";
     
-            // Adiciona o parâmetro img, dependendo de seu valor
+            // Monta o link com os parâmetros ajustados
+            let finalLink = `https://lojabdk.netlify.app/redirect.html?id=${id}`;
+            finalLink += `&titulo=${finalTitulo}`;
             finalLink += img ? `&img=${encodeURIComponent(img)}` : `&img=""`;
+            finalLink += `&link=${encodeURIComponent(link)}`;
     
             // URL da API do Bitly
             const apiUrl = 'https://api-ssl.bitly.com/v4/shorten';
@@ -257,6 +261,8 @@
             });
         }
     </script>
+    
+    
     
     
     
