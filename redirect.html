@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Atalhos</title>
+    <style>
+
+        select, input {
+            margin-bottom: 2vh;
+            border-radius: 12px;
+        }
+
+        button {
+            margin-top: 2vh;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 12px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #252525;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+
+            display: flex;
+    flex-direction: column;
+            /* Centralizar os cards horizontalmente */
+        }
+
+        /* Estilos para o modo escuro */
+        .dark-mode {
+            background-color: #f0f0f0;
+            /* Cor de fundo escura */
+            color: black;
+            /* Cor do texto clara */
+        }
+
+        .teste {
+            text-align: left;
+            font-weight: bold;
+            /* Define o peso da fonte como negrito */
+        }
+
+        /* Estilos para o botão toggle */
+        .toggle-button {
+            position: absolute;
+            top: 10px;
+            /* Ajuste a posição vertical conforme necessário */
+            right: 10px;
+            /* Ajuste a posição horizontal conforme necessário */
+            padding: 10px 20px;
+            background-color: #00000000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Estilos para o botão toggle quando ativado */
+        .toggle-button.active {
+            background-color: #ccc;
+            /* Cor de fundo quando o modo claro está ativado */
+            color: #000;
+            /* Cor do texto quando o modo claro está ativado */
+        }
+
+        .category-label {
+            font-size: 24px;
+            /* Tamanho do rótulo da categoria */
+            margin-bottom: 10px;
+            /* Espaçamento entre o rótulo e a categoria */
+            text-align: Left;
+            /* Alinhar o rótulo à esquerda */
+        }
+
+        .category {
+            margin-bottom: 20px;
+            /* Espaçamento entre categorias */
+            white-space: nowrap;
+            /* Impedir que os cards quebrem para a próxima linha */
+            overflow-x: auto;
+            /* Adicionar uma barra de rolagem horizontal quando necessário */
+            display: flex;
+            /* Usar flexbox para o layout horizontal */
+        }
+
+        .category .card {
+            width: 200px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Centralizar o conteúdo dentro do card */
+            color: #121212;
+        }
+
+        .category .card h2 {
+            font-size: 16px;
+        }
+
+        .category .card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .category .card img {
+            width: 100px;
+            /* Largura fixa */
+            height: 100px;
+            /* Altura fixa */
+            max-width: 100%;
+            height: auto;
+        }
+
+        #editor {
+            width: 1000px;
+            /* Largura ajustada para 90% da largura da tela */
+            height: 800px;
+            font-size: 16px;
+        }
+
+        #submitBtn {
+            margin-top: 10px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Estilo para centralizar a primeira categoria */
+        #category1 {
+            margin: 0 auto;
+            /* Centralizar horizontalmente */
+            text-align: center;
+            /* Centralizar o rótulo horizontalmente */
+        }
+
+        /* Estilos para telas menores (max-width: 768px) */
+        @media (max-width: 768px) {
+            .toggle-button {
+                top: 20px;
+                /* Ajuste a posição vertical para telas menores */
+                right: 20px;
+                /* Ajuste a posição horizontal para telas menores */
+            }
+
+            .category-label {
+                font-size: 20px;
+                /* Reduza o tamanho do rótulo da categoria para telas menores */
+                text-align: left;
+                /* Alinhe o rótulo à esquerda para telas menores */
+            }
+
+            .category {
+                flex-direction: column;
+                /* Altere a direção do flexbox para empilhar os cards verticalmente */
+                align-items: center;
+                /* Centralize os cards horizontalmente */
+            }
+
+            .category .card {
+                width: 100%;
+                /* Defina a largura dos cards para ocupar 100% da largura da tela */
+                margin: 10px 0;
+                /* Adicione espaço superior e inferior aos cards */
+            }
+
+            .category .card h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+    <script>
+        function createLink() {
+            const select = document.getElementById('adSelect');
+            const id = select.value;
+            const titulo = document.getElementById('titulo').value;
+            const img = document.getElementById('img').value;
+            const link = document.getElementById('link').value;
+    
+            if (id === "0" || !titulo || !link) {
+                alert("Por favor, preencha todos os campos obrigatórios corretamente.");
+                return;
+            }
+    
+            let finalLink = `lojabdk.netlify.app/redirect.html?id=${id}&link=${encodeURIComponent(link)}&titulo=${encodeURIComponent(titulo)}`;
+    
+            // Ensure img parameter always includes double quotes when empty
+            finalLink += `&img="${encodeURIComponent(img || "")}"`;
+    
+            navigator.clipboard.writeText(finalLink)
+                .then(() => console.log("Link copiado com sucesso para a área de transferência!"))
+                .catch(err => alert("Falha ao copiar o link: " + err));
+        }
+    </script>
+    
+    
+    
+</head>
+
+<body>
+    <h1>Crie seu link com redirecionador BDK</h1>
+
+    <label for="adSelect">Selecione a propaganda</label>
+    <select id="adSelect">
+        <option value="0">Selecione</option>
+        <option value="1">Duobot</option>
+        <option value="2">Honeygain</option>
+    </select>
+
+    <label for="titulo">Digite o texto que irá aparecer no botão</label>
+    <input type="text" id="titulo" placeholder="Exemplo: Clique aqui">
+
+    <label for="img">Cole aqui o link da imagem a ser exibida</label>
+    <input type="text" id="img" placeholder="https://url.da.imagem.com">
+
+    <label for="link">Cole aqui o link ao qual a página será redirecionada</label>
+    <input type="text" id="link" placeholder="https://linkdapagina.com">
+
+    <button onclick="createLink()">Criar link</button>
+</body>
