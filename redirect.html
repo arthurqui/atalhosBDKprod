@@ -195,17 +195,38 @@
                 return;
             }
     
-            let finalLink = `lojabdk.netlify.app/redirect.html?id=${id}&link=${encodeURIComponent(link)}&titulo=${encodeURIComponent(titulo)}`;
+            let finalLink = `https://lojabdk.netlify.app/redirect.html?id=${id}&link=${encodeURIComponent(link)}&titulo=${encodeURIComponent(titulo)}`;
     
-            // Ensure img parameter always includes double quotes when empty
+            // Adiciona o parâmetro img, se vazio será "" na query string
             finalLink += `&img="${encodeURIComponent(img || "")}"`;
     
-            navigator.clipboard.writeText(finalLink)
-                .then(() => console.log("Link copiado com sucesso para a área de transferência!"))
-                .catch(err => alert("Falha ao copiar o link: " + err));
+            // URL da API do Bitly
+            const apiUrl = 'https://api-ssl.bitly.com/v4/shorten';
+            const apiKey = '391ff2382804618a8c2c3027a7c5d6ebe482b58f';
+    
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${apiKey}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    "long_url": finalLink // URL completa e válida
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.link) {
+                    navigator.clipboard.writeText(data.link)
+                        .then(() => console.log("Link encurtado copiado com sucesso para a área de transferência!"))
+                        .catch(err => alert("Falha ao copiar o link encurtado: " + err));
+                } else {
+                    alert("Erro ao encurtar o link: " + JSON.stringify(data));
+                }
+            })
+            .catch(err => alert("Falha ao acessar a API do Bitly: " + err));
         }
     </script>
-    
     
     
 </head>
