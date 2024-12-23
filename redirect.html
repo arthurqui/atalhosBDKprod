@@ -20,7 +20,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #252525;
+            background-color: #666666;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -216,17 +216,49 @@
             })
             .then(response => response.json())
             .then(data => {
+                const occupyDiv = document.getElementById('ocupar');
+    
                 if (data.link) {
+                    // Se o link encurtado for retornado, copia para a área de transferência
                     navigator.clipboard.writeText(data.link)
                         .then(() => console.log("Link encurtado copiado com sucesso para a área de transferência!"))
                         .catch(err => alert("Falha ao copiar o link encurtado: " + err));
+    
+                    // Exibe os dois links na div "ocupar"
+                    occupyDiv.innerHTML = `
+                        <p><strong>Link Encurtado:</strong> <a href="${data.link}" target="_blank">${data.link}</a></p>
+                        <p><strong>Link Original:</strong> <a href="${finalLink}" target="_blank">${finalLink}</a></p>
+                    `;
                 } else {
-                    alert("Erro ao encurtar o link: " + JSON.stringify(data));
+                    // Se não tiver link encurtado, avisa o erro e copia o link original
+                    alert("Erro ao encurtar o link, copiando o link original.");
+                    navigator.clipboard.writeText(finalLink)
+                        .then(() => console.log("Link original copiado com sucesso para a área de transferência!"))
+                        .catch(err => alert("Falha ao copiar o link original: " + err));
+    
+                    // Exibe os links na div "ocupar"
+                    occupyDiv.innerHTML = `
+                        <p><strong>Link Original:</strong> <a href="${finalLink}" target="_blank">${finalLink}</a></p>
+                    `;
                 }
             })
-            .catch(err => alert("Falha ao acessar a API do Bitly: " + err));
+            .catch(err => {
+                // Se a requisição falhar, copia o link original
+                console.error("Erro ao acessar a API do Bitly: " + err);
+                navigator.clipboard.writeText(finalLink)
+                    .then(() => console.log("Falha ao encurtar o link. Link original copiado para a área de transferência."))
+                    .catch(err => alert("Falha ao copiar o link original: " + err));
+    
+                // Exibe os links na div "ocupar"
+                const occupyDiv = document.getElementById('ocupar');
+                occupyDiv.innerHTML = `
+                    <p><strong>Link Original:</strong> <a href="${finalLink}" target="_blank">${finalLink}</a></p>
+                `;
+            });
         }
     </script>
+    
+    
     
     
 </head>
@@ -239,6 +271,7 @@
         <option value="0">Selecione</option>
         <option value="1">Duobot</option>
         <option value="2">Honeygain</option>
+        <option value="3">Skincashier</option>
     </select>
 
     <label for="titulo">Digite o texto que irá aparecer no botão</label>
@@ -251,4 +284,6 @@
     <input type="text" id="link" placeholder="https://linkdapagina.com">
 
     <button onclick="createLink()">Criar link</button>
+
+    <div id="ocupar"></div>
 </body>
